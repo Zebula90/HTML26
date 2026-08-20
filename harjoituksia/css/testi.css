@@ -1,0 +1,4 @@
+.ulompi {background-color: #ffa; padding: 1em; margin: 1em; min-height: 2em;}
+.laatikko {width: 3em; height: 1em; padding: 0.5em; border: 1px solid black;}
+.toka .laatikko {float: left;}
+.kolmas .laatikko {float: right;}
