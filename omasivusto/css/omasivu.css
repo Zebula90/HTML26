@@ -49,6 +49,8 @@ aside {
 }
 
 .harrasteet {
+    font-weight: 600;
+    font-size: x-large;
     list-style-type: none;
     display: flex;
     gap: 400px;
