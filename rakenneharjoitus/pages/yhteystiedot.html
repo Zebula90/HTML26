@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yhteystiedot</title>
+</head>
+<body>
+    <header>
+        <h1>Yhteystiedot</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Etusivu</a></li>
+                <li><a href="palvelut.html">Palvelut</a></li>
+                <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="yhteystiedot">
+            <hr>
+            <h2>Varaukset</h2>
+            <address>
+            <a href="mailto:kuusijarvi@jarvi.fi">Varaukset@kuusijarvi.fi</a>
+            <p>Cafe Kuusijärvi</p>
+            <p>Puh. 040 123 4567 - Pertti Kuusinen</p>
+            <p>Kuusijärventie 3 <br> 01260 Vantaa</p>
+            </address>
+            <a href="https://www.cafekuusijarvi.fi" target="_blank">Linkki kuusijärven omille sivuille</a>
+        </section>
+        <section id="hinnasto">
+            <h2>Hinnasto</h2>
+            <dl>
+                <dt><strong>Sähkösaunat</strong></dt>
+                <dd><em>10e</em></dd>
+                <dt><strong>Savusaunat</strong></dt>
+                <dd><em>15e</em></dd>
+                <dt><strong>Noutopöytälounas</strong></dt>
+                <dd><em>14e</em></dd>
+            </dl>
+        </section>
+        <section id="aukioloajat">
+            <table style="border: 1px solid black;">
+                <caption><h2>Aukioloajat</h2></caption>
+                <tr>
+                    <th>Kahvila</th>
+                    <th>Sähkösaunat</th>
+                    <th>Savusaunat</th>
+                </tr>
+                <tr>
+                    <td>Ma-Su 9-21</td>
+                    <td>Ma-Su 9-21</td>
+                    <td>Ma-Su 14-20:30</td>
+                </tr>
+            </table>
+        </section>
+
+        
+    </main>
+    <aside>
+        <form id="palautekysely">
+            <fieldset>
+                <legend><strong>Palaute saunoista</strong></legend>
+                <label for="paivays">Päiväys</label> <br>
+                <input type="date" id="paivays" name="Päiväys" required min="2026-08-26"> <br>
+                <label for="palaute">Palaute</label> <br>
+                <textarea name="palaute" id="palaute" rows="5" cols="50" required minlength="5" maxlength="300" placeholder="Tähän voit kirjoittaa palautteen."></textarea>
+                <label for="sauna">Sähkö tai savusauna</label>
+                <select name="sauna" id="sauna">
+                    <option value="sähkö">Sähkö</option>
+                    <option value="savu" selected>Savu</option>
+                </select>
+                <input type="submit">
+            </fieldset>
+        </form>
+    </aside>
+</body>
+</html>
