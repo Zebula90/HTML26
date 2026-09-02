@@ -50,6 +50,8 @@ footer {
     border-radius: 16;
     border-color:  rgb(117, 9, 9);
     background-color: #5c755e;
+    width: 24%;
+    overflow: hidden;
 }
 
 .menu ul {
@@ -73,7 +75,7 @@ footer {
     background-color: #d8d7c6;
     border-radius: 5px;
     padding: 10px;
-    max-width: 550px;
+    max-width: 600px;
 }
 
 #harrasteet {
@@ -88,7 +90,7 @@ footer {
     float: left;
 }
 
-#harrastuksista p{
+#harrastuksista p {
     clear: left;
     background-color: #d8d7c6;
     border-radius: 5px;
@@ -131,39 +133,45 @@ figure img {
     width: 320px;
     height: 320px;
     border-radius: 10px;
+    padding: 1px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 figure figcaption {
     text-align: left;
 }
 
-#kuvasnooker {
-    width: 500px;
-    height: 500px;
-    border-radius: 10px;
+@media screen and (max-width: 1000px) {
+    #niilokoira {
+        display: none;
+    }
+    #niilokoira2 {
+        display: none;
+    } 
+    #niilokoira3 {
+        display: none;
+    }
+    .menu li {
+
+    }
 }
 
 #niilokoira {
-    float: right;
-    margin-top: -390px;
-    width: 320px;
-    height: 320px;
-    border-radius: 10px; 
+    margin-top: -380px;
 }
 
 #niilokoira2 {
-    float: right;
-    margin-top: -380px;
-    width: 320px;
-    height: 320px;
-    border-radius: 10px;
+    margin-top: -330px;
 }
 
 #niilokoira3 {
-    float: right;
-    margin-top: -650px;
-    width: 320px;
-    height: 320px;
+    margin-top: -615px;
+}
+
+#kuvasnooker {
+    width: 500px;
+    height: 500px;
     border-radius: 10px;
 }
 
