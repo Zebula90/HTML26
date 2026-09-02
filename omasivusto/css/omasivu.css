@@ -1,12 +1,17 @@
 h1 {
     text-align: center;
     color: black;
-    font-family: sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 6px 6px 10px rgba(144, 44, 231, 0.75);
 }
 
 h2 {
     text-align: left;
     padding: 5px;
+    background-color: darkolivegreen;
+    border-radius: 5px;
+    display: inline-block;
+    
 }
 
 p {
@@ -15,12 +20,26 @@ p {
 }
 
 .top {
-    background-color:rgb(246, 125, 85);
+    background-color:rgb(56, 117, 30);
+    border-radius: 10px;
+}
+
+body {
+    background-color: rgb(148, 159, 167);
 }
 
 aside {
-    text-align: right;
     float: right;
+}
+
+footer {
+    gap: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(162, 200, 213);
+    color: rgb(17, 15, 15);
+    text-align: center;
 }
 
 .menu li {
@@ -30,6 +49,7 @@ aside {
     border-style: solid;
     border-radius: 16;
     border-color:  rgb(117, 9, 9);
+    background-color: #5c755e;
 }
 
 .menu ul {
@@ -39,86 +59,126 @@ aside {
 }
 
 .menu a {
-    color: rgb(117, 9, 9);
+    color: rgb(213, 201, 201);
     padding: 140px;
     text-decoration: none;
     font-size: large;
 }
 .menu a:hover {
-    background-color: rgb(73, 73, 206);
+    background-color: rgb(56, 56, 173);
 }
 
-.harrasteet {
+.artikkeli {
+    margin: 0.5em;
+    background-color: #d8d7c6;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 550px;
+}
+
+#harrasteet {
     font-weight: 600;
     font-size: x-large;
     list-style-type: none;
     display: flex;
     gap: 400px;
     padding: 0 200px;
+    background-color: darkolivegreen;
+    border-radius: 15px;
+    float: left;
 }
 
-body {
-    background-color: rgb(148, 159, 167);
+#harrastuksista p{
+    clear: left;
+    background-color: #d8d7c6;
+    border-radius: 5px;
+    padding: 10px;
 }
 
-footer {
-    gap: 10px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(235, 203, 203);
-    color: rgb(17, 15, 15);
-    text-align: center;
+.pohja {
+    height: 150px;
+    width: 340px;
+    background-color: rgb(209, 197, 197);
+    border-radius: 5px;
+    transition: background-color 3s;
+}
+.pohja:hover {
+    background-color: rgb(181, 181, 119);
+}
+.pohja img {
+    width: 340px;
+    opacity: 0.05;
+    transition: transform 2s, opacity 2s ease-in-out 0s;
+}
+.pohja:hover img {
+    width: 340px;
+    opacity: 1;
+    transition: opacity 2s ease-in-out 2s;
+}
+.pohja .laatikko {
+    overflow: hidden;
+    width: 340px;
+    height: 0;
+    background-color: #aaf;
+    border-radius: 5px;
+    transition: height 1s ease;
+}
+.pohja:hover .laatikko {
+    height: 55%;
 }
 
-.kuvasnooker {
+figure img {
+    width: 320px;
+    height: 320px;
+    border-radius: 10px;
+}
+
+figure figcaption {
+    text-align: left;
+}
+
+#kuvasnooker {
     width: 500px;
     height: 500px;
     border-radius: 10px;
 }
 
-.niilokoira {
-    margin-top: -170px;
-    width: 350px;
-    height: 350px;
+#niilokoira {
+    float: right;
+    margin-top: -390px;
+    width: 320px;
+    height: 320px;
     border-radius: 10px; 
-    padding: 0 px;
-    top: 40px;
 }
 
-.niilokoira2 {
-    margin-top: -120px;
-    width: 400px;
-    height: 400px;
+#niilokoira2 {
+    float: right;
+    margin-top: -380px;
+    width: 320px;
+    height: 320px;
     border-radius: 10px;
 }
 
-.niilokoira3 {
-    margin-top: -500px;
-    width: 400px;
-    height: 400px;
+#niilokoira3 {
+    float: right;
+    margin-top: -650px;
+    width: 320px;
+    height: 320px;
     border-radius: 10px;
 }
 
-.kuvabtt {
+#kuvabtt {
     width: 490px;
     height: 500px;
     border-radius: 10px;
 }
 
-.kuvadd {
+#kuvadd {
     width: 490px;
     height: 500px;
     border-radius: 10px;
 }
 
-.oswald-fontti {
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
+#ccg {
+    height: 270px;
 }
-
-
-
