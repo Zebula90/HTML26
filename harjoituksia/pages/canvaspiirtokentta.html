@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>  
+        /* CSS-tyyli: näyttökoko selaimessa */  
+        canvas {  
+            border: 2px solid black;  
+        }  
+    </style> 
+</head>
+<body>    
+    <canvas id="piirtoalue" width="600" height="400">
+    </canvas>  
+      
+    <script>  
+        const canvas = document.getElementById('piirtoalue');
+        const ctx = canvas.getContext('2d');
+
+        // Track drawing state and last coordinates
+        let isDrawing = false;
+        let lastX = 0;
+        let lastY = 0;
+
+        // Configure brush styles
+        ctx.strokeStyle = '#000000';
+        ctx.lineWidth = 3;
+        ctx.lineJoin = 'round';
+        ctx.lineCap = 'round';
+
+        // Helper function to extract exact canvas coordinates
+        function getCoordinates(event) {
+          const rect = canvas.getBoundingClientRect();
+          return {
+            x: event.clientX - rect.left,
+            y: event.clientY - rect.top
+          };
+        }
+    
+        // 1. Mouse Down: Start drawing path
+        canvas.addEventListener('mousedown', (e) => {
+          isDrawing = true;
+          const { x, y } = getCoordinates(e);
+          lastX = x;
+          lastY = y;
+        });
+    
+        // 2. Mouse Move: Connect lines while mouse is held down
+        canvas.addEventListener('mousemove', (e) => {
+          if (!isDrawing) return; // Exit if user isn't clicking
+        
+          const { x, y } = getCoordinates(e);
+        
+        ctx.beginPath();
+        ctx.moveTo(lastX, lastY); // Start from previous frame's point
+        ctx.lineTo(x, y);         // Draw line to current mouse position
+        ctx.stroke();             // Render the line
+        
+          // Update coordinates for the next frame
+        lastX = x;
+        lastY = y;
+        });
+    
+        // 3. Mouse Up: Stop drawing
+        canvas.addEventListener('mouseup', () => isDrawing = false);
+    
+        // 4. Mouse Out: Stop drawing if user leaves the canvas area
+        canvas.addEventListener('mouseout', () => isDrawing = false);
+
+        window.addEventListener('keydown', (event) => {
+        // Convert key to lowercase to handle caps lock
+        const key = event.key.toLowerCase();
+
+        if (key === 'r') {
+        ctx.strokeStyle = '#ff0000'; // Red
+        console.log('Color changed to Red');
+        } else if (key === 'g') {
+        ctx.strokeStyle = '#00ff00'; // Green
+        console.log('Color changed to Green');
+        } else if (key === 'b') {
+        ctx.strokeStyle = '#0000ff'; // Blue
+        console.log('Color changed to Blue');
+        } else if (key === 'c') {
+        // Clear canvas option on 'C'
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+         }
+        });
+
+    </script>   
+</body>
+</html>
