@@ -1,0 +1,17 @@
+/* CSS-kokonaisharjoitus, osa 6 */
+
+/* Aloita CSS:n kirjoittaminen tämän kommentin alta. */
+
+#cards  {
+    position: relative;
+    display: flex;
+    background-color: rgb(195, 195, 64);
+}
+
+.card {
+    background-color: aqua;
+    margin: 10px;
+    position: relative;
+    display: inline-block;
+
+}

@@ -1,0 +1,32 @@
+.card {
+    position: relative;
+    width: 160px;
+
+}
+.badge {
+        position: absolute;
+        right: 12px;
+        top: -12px;
+        background-color: chartreuse;
+        
+}
+
+.toolbar {
+    background-color: bisque;
+    position: sticky;
+    top: 0;
+    z-index: - 1;
+}
+
+.help   {
+    background-color: aquamarine;
+    position: fixed;
+    right: 15px;
+    bottom: 20px;
+    z-index: 1;
+}
+
+p   {
+    background-color: aqua;
+    z-index: 10;
+}

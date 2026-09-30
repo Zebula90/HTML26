@@ -1,0 +1,23 @@
+:root {
+    background-color: 532B72;
+    color-scheme: lightblue;
+    color: red;
+    accent-color: darkred;
+}
+
+.kortti {
+    background-color: aqua;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+}
+
+.button {
+    padding: 5px;
+    background-color: brown;
+
+}
+
+.alert-danger {
+
+}

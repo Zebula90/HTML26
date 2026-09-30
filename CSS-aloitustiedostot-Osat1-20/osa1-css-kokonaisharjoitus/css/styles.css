@@ -1,0 +1,22 @@
+/* CSS-kokonaisharjoitus, osa 1 */
+
+/* Aloita CSS:n kirjoittaminen tämän kommentin alta. */
+
+h1  {
+    color: darkcyan;
+}
+
+h2  {
+    color: chartreuse;
+}
+
+h3  {
+    background-color: aquamarine;
+    color: brown;
+}
+
+p   {
+    font-size: 20px;
+    color: darkred;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

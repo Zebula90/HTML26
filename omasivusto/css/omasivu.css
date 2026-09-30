@@ -34,8 +34,8 @@ aside {
 
 footer {
     gap: 10px;
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    bottom: -25%;
     width: 100%;
     background-color: rgb(162, 200, 213);
     color: rgb(17, 15, 15);
@@ -43,15 +43,18 @@ footer {
 }
 
 .menu li {
-    float: left;
+    display: inline-block;
     font-weight: 400;
     font-size: large;
+    text-align: left;
     border-style: solid;
     border-radius: 16;
     border-color:  rgb(117, 9, 9);
     background-color: #5c755e;
     width: 24%;
     overflow: hidden;
+    margin-left: -2px;
+    margin-right: -2px;
 }
 
 .menu ul {
@@ -142,7 +145,7 @@ figure figcaption {
     text-align: left;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
     #niilokoira {
         display: none;
     }
@@ -154,6 +157,10 @@ figure figcaption {
     }
     .menu li {
 
+    }           
+    menu li {
+        position: relative;
+        display: inline-block;
     }
 }
 
