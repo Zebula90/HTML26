@@ -1,0 +1,38 @@
+.card {
+    border: 4px solid black;
+    border-radius: 10px;
+    box-shadow: darkblue 10px 10px 5px;
+    width: 10rem;
+    height: 10rem;
+}
+
+.button {
+    margin: 5em;
+    background-color: aqua;
+    color: black;
+    width: 8em;
+    height: 5em;
+    border: 4px solid black;
+    box-shadow: black 15px 15px 5px;
+}
+
+.button:hover {
+    background-color: red;
+    color: blue;
+}
+
+.button :focus-visible {
+    background-color: chocolate;
+    outline: 5px solid black    ;
+
+}
+
+.button:active {
+    background-color: green;
+    color: red;
+}
+
+.button:disabled {
+    background-color: grey;
+    color: black;
+}

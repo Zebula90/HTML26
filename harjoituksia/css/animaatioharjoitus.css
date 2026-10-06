@@ -1,0 +1,134 @@
+.card {
+    background-color: bisque;
+    border-radius: 1em;
+    width: 15rem;
+    height: 15rem;
+    text-align: center;
+    transition: transform;
+    padding: 1em;
+    margin: 1em;
+    transition: transform 2s;
+    box-shadow: 15px 15px pink;
+    position: absolute;
+    left: 35%;
+    top: 3em;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+}
+
+.card:focus-visible {
+    outline: 4px solid purple;
+}
+
+.nappi {
+    width: 6em;
+    height: 4em;
+    background-color: rgb(119, 119, 226);
+    border-radius: 1em;
+}
+
+.nappi:focus-visible {
+    outline: 6px solid crimson;
+}
+
+p {
+    text-decoration: underline;
+}
+
+h2  {
+    background-color: rgb(160, 205, 81);
+    border-radius: 1em;
+}
+
+.card2 {
+    background: linear-gradient(darkolivegreen, #9198e5);
+    box-shadow: 0.7em 0.7em 0.7em;
+    display: flex;
+    flex-direction: column;
+    border-radius: .8em;
+    gap: 3em;
+    left: 36%;
+    top: 330px;
+    width: 5em;
+    position: relative;
+    padding: 3em;
+    margin: 3em;
+}
+
+button  {
+    background-color: crimson;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes enterFadeSkew {
+    0% {
+        opacity: 0.1;
+        transform: skew(20deg);
+    }
+    100% {
+        opacity: 1;
+        transform: skew(0deg);}
+    }
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+
+    }
+}
+
+
+.nappi1 {
+    animation: spin 1.5s linear infinite;
+    box-shadow: .5em .5em .5em;
+    border-radius: 0.7em;
+    }
+
+.nappi1:focus-visible {
+    outline: 8px solid purple;
+}
+
+.nappi2 {
+    animation: enterFadeSkew 4s ease;
+    box-shadow: .5em .5em .5em;
+    border-radius: 0.7em;
+}
+
+.nappi2:focus-visible   {
+    outline: 8px solid pink;
+}
+
+.nappi3 {
+    animation: pulse 3s infinite;
+    animation-iteration-count: 3;
+    box-shadow: .5em .5em .5em;
+    border-radius: 0.7em;
+}
+
+.nappi3:focus-visible   {
+    outline: 8px solid magenta;
+}
+
+
+
+
+
+
+
+
+    
+  
+
+

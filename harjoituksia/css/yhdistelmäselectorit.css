@@ -1,0 +1,17 @@
+/* post-luokan ensimmäinen lapsi perii värin. Luokkaa voidaan käyttää useammassa paikassa */
+.post > :first-child {
+    color: cadetblue;
+}
+
+/* id korostettu saa vahvemman ja erilaisen fontin. Id on yksilökohtainen */
+
+#korostettu {
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* artikkelin sisällä olevat kappaleet saavat suuremman ja erilaisen fontin */
+article p {
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}

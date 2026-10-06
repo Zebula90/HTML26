@@ -7,10 +7,11 @@ h1 {
 
 h2 {
     text-align: left;
-    padding: 5px;
+    padding: 0.3em;
     background-color: darkolivegreen;
     border-radius: 5px;
     display: inline-block;
+    box-shadow: 0.5em 0.5em 0.5em black;
     
 }
 
@@ -20,12 +21,13 @@ p {
 }
 
 .top {
-    background-color:rgb(56, 117, 30);
-    border-radius: 10px;
+    background-color: darkolivegreen;
+    border-radius: 1em;
 }
 
 body {
-    background-color: rgb(148, 159, 167);
+    background: linear-gradient(rgb(75, 84, 92),rgb(148, 159, 167) );
+    height: 120vh;
 }
 
 aside {
@@ -33,7 +35,7 @@ aside {
 }
 
 footer {
-    gap: 10px;
+    gap: 1em;
     position: absolute;
     bottom: -25%;
     width: 100%;
@@ -48,24 +50,27 @@ footer {
     font-size: large;
     text-align: left;
     border-style: solid;
-    border-radius: 16;
+    border-radius: 1em;
     border-color:  rgb(117, 9, 9);
     background-color: #5c755e;
     width: 24%;
     overflow: hidden;
-    margin-left: -2px;
-    margin-right: -2px;
+    margin-left: -0.15em;
+    margin-right: -0.15em;
+    box-shadow: 0.4em 0.4em 0.2em black;
+    
 }
 
 .menu ul {
     list-style-type: none;
     overflow: hidden;
+    text-align: start;
     
 }
 
 .menu a {
     color: rgb(213, 201, 201);
-    padding: 140px;
+    padding: 9em;
     text-decoration: none;
     font-size: large;
 }
@@ -74,11 +79,12 @@ footer {
 }
 
 .artikkeli {
-    margin: 0.5em;
+    margin: 1em;
     background-color: #d8d7c6;
     border-radius: 5px;
     padding: 10px;
-    max-width: 600px;
+    max-width: 37.5em;
+    box-shadow: 1em 1em 10px rgb(81, 54, 58);
 }
 
 #harrasteet {
@@ -86,46 +92,48 @@ footer {
     font-size: x-large;
     list-style-type: none;
     display: flex;
-    gap: 400px;
-    padding: 0 200px;
+    gap: 13.4em;
+    padding: 0 12.5em;
     background-color: darkolivegreen;
-    border-radius: 15px;
+    border-radius: 1em;
     float: left;
+    box-shadow: 0.5em 0.5em 0.5em black;
 }
 
 #harrastuksista p {
     clear: left;
     background-color: #d8d7c6;
-    border-radius: 5px;
-    padding: 10px;
+    border-radius: 0.5em;
+    padding: 1em;
+    box-shadow: 1em 1em 1em rgb(81, 54, 58);
 }
 
 .pohja {
-    height: 150px;
-    width: 340px;
+    height: 10em;
+    width: 20em;
     background-color: rgb(209, 197, 197);
-    border-radius: 5px;
+    border-radius: 0.5em;
     transition: background-color 3s;
 }
 .pohja:hover {
     background-color: rgb(181, 181, 119);
 }
 .pohja img {
-    width: 340px;
+    width: 20em;
     opacity: 0.05;
     transition: transform 2s, opacity 2s ease-in-out 0s;
 }
 .pohja:hover img {
-    width: 340px;
+    width: 20em;
     opacity: 1;
     transition: opacity 2s ease-in-out 2s;
 }
 .pohja .laatikko {
     overflow: hidden;
-    width: 340px;
+    width: 20em;
     height: 0;
     background-color: #aaf;
-    border-radius: 5px;
+    border-radius: 0.5em;
     transition: height 1s ease;
 }
 .pohja:hover .laatikko {
@@ -133,10 +141,10 @@ footer {
 }
 
 figure img {
-    width: 320px;
-    height: 320px;
-    border-radius: 10px;
-    padding: 1px;
+    width: 20em;
+    height: 20em;
+    border-radius: 1em;
+    padding: 0.1em;
     max-width: 100%;
     max-height: 100%;
 }
@@ -145,7 +153,12 @@ figure figcaption {
     text-align: left;
 }
 
-@media screen and (max-width: 900px) {
+img {
+    box-shadow: 0.5em 0.5em 0.5em black;
+    padding: 0.2em;
+}
+
+@media screen and (max-width: 56em) {
     #niilokoira {
         display: none;
     }
@@ -165,35 +178,35 @@ figure figcaption {
 }
 
 #niilokoira {
-    margin-top: -380px;
+    margin-top: -25em;
 }
 
 #niilokoira2 {
-    margin-top: -330px;
+    margin-top: -20em;
 }
 
 #niilokoira3 {
-    margin-top: -615px;
+    margin-top: -40em;
 }
 
 #kuvasnooker {
-    width: 500px;
-    height: 500px;
-    border-radius: 10px;
+    width: 30.6em;
+    height: 31em;
+    border-radius: 1em;
 }
 
 #kuvabtt {
-    width: 490px;
-    height: 500px;
-    border-radius: 10px;
+    width: 30.6em;
+    height: 31em;
+    border-radius: 1em;
 }
 
 #kuvadd {
-    width: 490px;
-    height: 500px;
-    border-radius: 10px;
+    width: 30.6em;
+    height: 31em;
+    border-radius: 1em;
 }
 
 #ccg {
-    height: 270px;
+    height: 16em;
 }

@@ -1,0 +1,42 @@
+:root {
+    --text-body: 1rem;
+    --text-h2: 2rem;
+    --leading-body: 1.65
+
+}
+
+h1 {
+    text-align: center;
+    background-color: aqua;
+    font-size: clamp(1rem, 2.5vw, 2rem);
+}
+
+body {
+    line-height: 1.4rem;
+}
+
+article {
+    position: relative;
+    max-width: 65ch;
+}
+
+.kappale {
+    background-color: blanchedalmond;
+    border-radius: 1em;
+}
+
+.card {
+    background-color: darksalmon;
+    float: right;
+    height: 18rem;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 8rem;
+}
+.card h2 {
+    font-size: 2vw;
+}
+.card a {
+    text-decoration: wavy;
+}

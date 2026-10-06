@@ -20,3 +20,19 @@ p   {
     color: darkred;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+#main-content {
+    background-color: aliceblue;
+    border-radius: 12px;
+}
+
+/* korttiluokalle määritetään reunat, oma väri ja fontti. Lisätty myös varjot ja margin. */
+
+.card {
+    border: 4px solid rgb(139, 47, 47);
+    background-color: rgb(58, 189, 193) 0.9;
+    border-radius: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 1em 1em ;
+    margin: 1em;
+}
