@@ -1,3 +1,64 @@
 /* CSS-kokonaisharjoitus, osa 4 */
 
 /* Aloita CSS:n kirjoittaminen tämän kommentin alta. */
+.skip-link  {
+    display: none;
+}
+
+.brand  {
+    opacity: 0;
+}
+
+.hero h1, h2 {
+    text-decoration: underline;
+}
+.card  {
+    font-family: sans-serif;
+    font-weight: 700;
+    border: 3px dotted rgb(59, 58, 58);
+    border-radius: 1.5em;
+    padding: 1em;
+    background: linear-gradient(white, grey);
+    display: inline-block;
+}
+
+.nav-list   {
+    font-size: larger;
+    list-style-type: none;
+    display: inline;
+}
+
+.button     {
+    color: black;
+    background-color: rgb(7, 110, 7, 0.4);
+    padding: 0.2em;
+    border-radius: 0.2em;
+}
+
+.help-button {
+    margin: 1em;
+    background-color: darkcyan;
+    display: block;
+    position: absolute;
+    left: 14rem;
+}
+
+.site-footer    {
+    visibility: hidden;
+}
+
+body    {
+    background: linear-gradient(30deg, rgb(170, 170, 41), white);
+    height: 100vh;
+}
+
+h3  {
+    border: 2px inset black;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    width: 35%;
+}
+
+a:hover     {
+    background-color: aqua;
+}
