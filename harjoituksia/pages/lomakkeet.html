@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/lomakkeet.css">
+    <title>Document</title>
+</head>
+<body>
+<label for="email">Sähköposti</label>
+<input id="email" type="email" required placeholder="Sähköposti">
+<select name="nimi" id="selekti"></select>
+<input type="checkbox">
+<input type="radio">
+<input type="range">
+<div class="input-group"><button class="btn"></button> <button class="btn--primary"></button> <button class="btn--secondary"></button> <button class="btn--danger"></button>
+</div>
+<hr style="height: 10px; color: darkgrey; background-color: black;">
+    <form>
+        <fieldset>
+            <legend>Lomakeharjoitus</legend>
+            <input type="name" required placeholder="Koko nimi">
+            <label for="name">Nimi</label>
+            <input type="email" required placeholder="Sähköposti">
+            <label for="email">Sähköposti</label>
+            <input type="password" required placeholder="Salasana">
+            <label for="password">Salasana</label>
+            <input type="password_confirmation" required placeholder="Salasanan vahvistus" id="salasana" disabled>
+            <label for="password_confirmation" >Salasanan vahvistus</label>
+            <input type="checkbox" required id="ehdot">
+            <label for="ehdot" id="ehdot_label">Hyväksyn ehdot</label>
+            <button>Lähetä</button>
+            <label for="button">Lähetä eteenpäin</label>
+        </fieldset>
+    </form>
+</body>
+</html>
