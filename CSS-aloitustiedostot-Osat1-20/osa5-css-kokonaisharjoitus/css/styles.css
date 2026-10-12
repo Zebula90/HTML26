@@ -2,16 +2,58 @@
 
 /* Aloita CSS:n kirjoittaminen tämän kommentin alta. */
 
+body    {
+    background: linear-gradient(150deg, rgb(80, 74, 74), rgb(31, 30, 30));
+    height: 110vh;
+}
+
+p   {
+    color: white;
+}
+
+h1, h2, h3  {
+    color: white;
+}
+
+a   {
+    color: rgb(153, 198, 249);
+}
+
 .card {
     position: relative;
-    background-color: aquamarine;
-    width: 200px;
-    border-radius: 12px;
-    margin: 1px;
+    background-color: rgb(241, 241, 207);
+    width: 12rem;
+    padding: 0.2rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
     display: inline-block;
+    box-shadow: 0.5rem 0.5rem 0.8rem white;
 }
 
 .card__badge {
     position: absolute;
-    left: 180px;
+    left: 11rem;
+}
+
+.card p, h3  {
+    color: black;
+}
+
+.help-button    {
+    background-color: rgb(186, 186, 34);
+    position: fixed;
+    right: 10rem;
+    scale: 1.5;
+}
+
+.nav-list   {
+    position: static;
+    list-style-type: none;
+}
+
+#skip-link   {
+    position: sticky;
+    top: 0.1rem;
+    color: rgb(77, 77, 228);
+    z-index: -1;
 }
