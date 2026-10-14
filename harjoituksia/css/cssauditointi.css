@@ -1,0 +1,17 @@
+#app .page .content .card h2 { margin-top: 11px; }
+.card2 { width: 390px; height: 250px; }
+.button { outline: none; transition: all .2s; }
+.hero img { width: 1200px; }
+
+/* Ylläpidettävyys: Ensimmäisellä rivillä käyttäisin tokenia useamman kerran mieluummin kuin että ahtaisin noin monelle osalle  
+saman arvon yhdelle kaarisulkeelle. Tuolla tyylillä muutosten tekeminen sivustolle muuttuu erittäin vaikeaksi. Osat tulisi myös 
+erotella pilkulla. */
+
+/*Responsiivisuus: Pikseleiden sijaan käyttäisin em tai rem arvoa jolloin sivu on responsiivisempi. */
+
+/* Saavutettavuus: Buttonista on poistettu outline, jolloin sitä on vaikea havaita focuksella. App ja page eivät välttämättä
+ole hyviä nimiä kuvaamaan sivun osioita. */
+
+/* Suorituskyky: Transition all buttoneissa tekee sivustosta raskaammaan suorittaa. */
+
+

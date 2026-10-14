@@ -142,7 +142,7 @@ footer {
 
 figure img {
     width: 20em;
-    height: 20em;
+    height: auto;
     border-radius: 1em;
     padding: 0.1em;
     max-width: 100%;
@@ -157,6 +157,11 @@ img {
     box-shadow: 0.5em 0.5em 0.5em black;
     padding: 0.2em;
 }
+
+@media (max-width: 40rem) {  .menu
+     { flex-direction: column; }
+    }
+
 
 @media screen and (max-width: 56em) {
     #niilokoira {

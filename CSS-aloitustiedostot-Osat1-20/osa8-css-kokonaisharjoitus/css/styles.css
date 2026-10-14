@@ -1,3 +1,9 @@
 /* CSS-kokonaisharjoitus, osa 8 */
 
 /* Aloita CSS:n kirjoittaminen tämän kommentin alta. */
+
+body    {
+    background: linear-gradient(rgb(66, 64, 64), rgb(56, 55, 55));
+    height: 130vh;
+    color: rgb(203, 192, 192);
+}
