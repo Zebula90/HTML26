@@ -1,0 +1,94 @@
+:root   {
+    /* Määritä myöhemmin fontti */
+    /* Muista tokenit */
+    --radius: 0.5rem;
+    --space_sm: 0.4rem;
+    --space_md: 1rem;
+    --space_lg: 2rem;
+    line-height: 1.6;
+    color: white;
+}
+
+*   {
+    box-sizing: border-box;
+}
+
+body    {
+    background: linear-gradient(rgb(66, 1, 66), black);
+    height: 130vh;
+}
+
+a   {
+    color: rgb(136, 136, 217);
+    text-decoration: none;
+    background-color: azure;
+    border-radius: var(--radius);
+    padding: var(--space_sm);
+}
+
+a:hover {
+    background-color: rgb(187, 187, 231);
+    color: rgb(30, 30, 156);
+}
+
+a:focus-visible {
+    outline: 5px solid azure;
+}
+
+.top    {
+    font-size: clamp(0.5rem, 2vw, 1rem);
+}
+
+.artikkeli  {
+    color: black;
+    background-color: rgb(227, 227, 208);
+    border-radius: var(--radius);
+    padding: var(--space_sm);
+    max-width: 40rem;
+    box-shadow: 0.7em 0.7em 10px rgb(133, 112, 115);
+}
+
+.kortti {
+
+}
+
+#laatikko   {
+    display: grid;
+}
+
+#pääotsikko {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#menu ul    {
+    list-style-type: none;
+    font-size: larger;
+    display: flex;
+    gap: 20rem;
+    margin-left: var(--space_lg) ;
+    margin-right: var(--space_lg);
+    justify-content: center;
+}
+
+#menu   {
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 1300px){
+    #menu ul    {
+        gap: 10rem;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 870px){
+    #menu ul   {
+        flex-direction: column;
+        gap: var(--space_lg);
+        align-items: center;
+    }
+}
+
+

@@ -1,0 +1,83 @@
+:root   {
+    --radius: 0.4rem;
+    --margin: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body    {
+    background: linear-gradient(rgb(59, 1, 59), black);
+    height: 100vh;
+}
+
+.kortti {
+    position: relative;
+    width: 30rem;
+    height: 35rem;
+    margin: var(--margin);
+    background-color: beige;
+    border: 3px solid rgb(14, 11, 11);
+    border-radius: var(--radius);
+}
+
+.kortti p   {
+    text-align: center;
+}
+
+.kortti:hover   {
+    transform: translateY(-4px);
+}
+
+.kortti:focus-within    {
+    transform: translateY(-4px);
+}
+
+.otsikko    {
+    font-size: medium;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#container  {
+    display: flex;
+}
+
+#nappi  {
+    background-color: rgb(170, 169, 169);
+    display: block;
+    margin: 0 auto;
+    border-radius: var(--radius);
+    
+}
+
+#nappi:hover    {
+    background-color: rgb(116, 114, 114);
+}
+
+#nappi:focus-visible    {
+    outline: 3px solid olive;
+}
+
+#nappi:active   {
+    color: black;
+    background-color: rgb(135, 224, 135);
+    content: "Hyvä!";
+}
+
+#tuotteen_kuva  {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+}
+
+figcaption  {
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .kortti {
+        min-width: 0;
+    }
+    #container  {
+        flex-direction: column;
+    }
+}
