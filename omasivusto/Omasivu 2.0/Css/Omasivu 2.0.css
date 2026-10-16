@@ -1,6 +1,7 @@
 :root   {
     /* Määritä myöhemmin fontti */
     /* Muista tokenit */
+    /* Muista reduced motion */
     --radius: 0.5rem;
     --space_sm: 0.4rem;
     --space_md: 1rem;
@@ -26,6 +27,10 @@ a   {
     padding: var(--space_sm);
 }
 
+img  {
+    border-radius: var(--radius);
+}
+
 a:hover {
     background-color: rgb(187, 187, 231);
     color: rgb(30, 30, 156);
@@ -44,18 +49,48 @@ a:focus-visible {
     background-color: rgb(227, 227, 208);
     border-radius: var(--radius);
     padding: var(--space_sm);
+    margin: var(--space_md);
     max-width: 40rem;
     box-shadow: 0.7em 0.7em 10px rgb(133, 112, 115);
 }
 
 .kortti {
+    width: 100%;
+    background-color: rgb(66, 66, 58);
+    border-radius: var(--radius);
+}
 
+.kortti h2  {
+    text-align: center;
 }
 
 #laatikko   {
+    width: 100%;
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    background-color: rgb(227, 227, 208);
+    border-radius: var(--radius);
+    gap: var(--space_md);
+    padding: var(--space_md);
+    margin: var(--space_sm);
+    margin-right: var(--space_md);
 }
 
+#snooker_img    {
+    width: 100%;
+    height: auto;
+}
+
+#videopelit_img {
+    width: 100%;
+    height: auto;
+}
+
+#lukeminen_img  {
+    width: 100%;
+    height: auto;
+}
 #pääotsikko {
     text-align: center;
     text-decoration: underline;
@@ -69,6 +104,10 @@ a:focus-visible {
     margin-left: var(--space_lg) ;
     margin-right: var(--space_lg);
     justify-content: center;
+}
+
+#menu li    {
+    box-shadow: 0.3rem 0.3rem 0.4rem silver;
 }
 
 #menu   {
@@ -91,4 +130,11 @@ a:focus-visible {
     }
 }
 
+@media screen and (max-width:600px){
+    .laatikko   {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    
+}
 
