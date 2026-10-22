@@ -1,5 +1,6 @@
 :root   {
     /* Määritä myöhemmin fontti */
+    font-family: "Oswald", sans-serif;
     /* Muista tokenit: */
     /* Muista reduced motion */
     --radius: 0.5rem;
@@ -19,6 +20,10 @@ body    {
     height: 130vh;
 }
 
+h1  {
+    color: rgb(66, 1, 66);
+}
+
 a   {
     color: rgb(136, 136, 217);
     text-decoration: none;
@@ -27,8 +32,29 @@ a   {
     padding: var(--space_sm);
 }
 
+aside   {
+    position: absolute;
+    right: 4rem;
+    top: 16.5rem;
+    right: var(--space_lg);
+}
+
 img  {
     border-radius: var(--radius);
+    width: 100%;
+    height: auto;
+}
+
+label   {
+    color: black;
+}
+
+input   {
+    background-color: azure;
+}
+
+input:focus-visible {
+    outline: 4px solid black;
 }
 
 figure figcaption   {
@@ -71,6 +97,27 @@ a:focus-visible {
     text-align: center;
 }
 
+#lomake {
+    width: 15rem;
+    height: 20rem;
+    background-color: silver;
+    display: flex;
+    flex-direction: column;
+    padding: var(--space_md);
+    border-radius: var(--radius);
+}
+
+#nappi  {
+    background-color: azure;
+    color: rgb(136, 136, 217);
+    border-radius: var(--radius);
+    margin-top: var(--space_lg);
+}
+
+#nappi:focus-visible    {
+    outline: 4px solid azure;
+}
+
 #laatikko   {
     width: 100%;
     display: grid;
@@ -85,29 +132,11 @@ a:focus-visible {
     margin-right: var(--space_sm);
 }
 
-#snooker_img    {
-    width: 100%;
-    height: auto;
-}
-
-#videopelit_img {
-    width: 100%;
-    height: auto;
-}
-
-#lukeminen_img  {
-    width: 100%;
-    height: auto;
-}
-
-#duunari    {
+#duunari_img    {
     width: 22rem;
     height: auto;
-    float: right;
-    position: absolute;
-    right: 4rem;
-    top: 15rem;
 }
+
 #pääotsikko {
     text-align: center;
     text-decoration: underline;
@@ -137,10 +166,18 @@ a:focus-visible {
         gap: 10rem;
         align-items: center;
     }
+    #lomake {
+        position: absolute;
+        bottom: var(--space_lg);
+        left: var(--space_lg);
+    }
 }
 
 @media screen and (max-width:1115px) {
-    #duunari    {
+    #duunari_img    {
+        display: none;
+    }
+    figcaption {
         display: none;
     }
 }
@@ -151,12 +188,15 @@ a:focus-visible {
         gap: var(--space_lg);
         align-items: center;
     }
+    #laatikko   {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media screen and (max-width:650px){
     #laatikko   {
         grid-template-columns: none;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr;
     }
 }
 
