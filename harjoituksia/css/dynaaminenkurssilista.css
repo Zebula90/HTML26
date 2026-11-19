@@ -1,0 +1,21 @@
+.artikkeli {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+
+.aktiivinen {
+    background-color: rgb(9, 208, 9);
+}
+
+li  {
+    border: 3px solid black;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 0.2rem;
+    background-color: lightgrey;
+}
+
+ul  {
+    list-style-type: none;
+
+}

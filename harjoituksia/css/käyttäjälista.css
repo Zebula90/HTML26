@@ -1,0 +1,28 @@
+:root {
+    font-size: larger;
+}
+
+body    {
+    background-color: rgb(241, 241, 221);
+}
+
+#lista {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#haku   {
+    position: relative;
+    left: 40%;
+}
+
+li  {
+    text-align: center;
+    list-style-type: none;
+    background-color: rgb(138, 208, 138);
+    border-radius: 0.4rem;
+    padding: 1.1rem;
+    margin: -0.5rem;
+}
+

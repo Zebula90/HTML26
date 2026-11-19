@@ -1,0 +1,1 @@
+document.body.style.setProperty("--primary_color", "--secondary_color");

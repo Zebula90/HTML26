@@ -1,0 +1,9 @@
+#lista {
+    list-style-type: circle;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#lista2 {
+    list-style-type: square;
+}

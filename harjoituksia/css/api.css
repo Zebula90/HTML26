@@ -1,0 +1,22 @@
+body {
+    background: linear-gradient(azure, lightgrey);
+    height: 100vh;
+}
+
+form    {
+    background-color: rgb(154, 146, 146);
+    position: absolute;
+    left: 40%;
+    top: 10%;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    width: 25%;
+    padding: 3rem;
+}
+
+#nappi {
+    position: inherit;
+    left: 40%;
+    top: 70%;
+    background-color: rgb(138, 181, 187);
+}

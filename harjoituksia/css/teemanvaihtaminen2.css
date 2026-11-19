@@ -1,0 +1,202 @@
+:root   {
+    /* Määritä myöhemmin fontti */
+    font-family: "Oswald", sans-serif;
+    /* Muista tokenit: */
+    /* Muista reduced motion */
+    --radius: 0.5rem;
+    --space_sm: 0.4rem;
+    --space_md: 1rem;
+    --space_lg: 2rem;
+    line-height: 1.6;
+    --primary_color:  rgb(66, 1, 66);
+    --secondary_color: azure;
+}
+
+*   {
+    box-sizing: border-box;
+}
+
+body    {
+    background: linear-gradient(var(--secondary_color), black);
+    height: 130vh;
+}
+
+h1  {
+    color: rgb(66, 1, 66);
+}
+
+a   {
+    color: rgb(136, 136, 217);
+    text-decoration: none;
+    background-color: var(--primary_color);
+    border-radius: var(--radius);
+    padding: var(--space_sm);
+}
+
+aside   {
+    position: absolute;
+    right: 4rem;
+    top: 16.5rem;
+    right: var(--space_lg);
+}
+
+img  {
+    border-radius: var(--radius);
+    width: 100%;
+    height: auto;
+}
+
+label   {
+    color: black;
+}
+
+input   {
+    background-color: var(--primary_color);
+}
+
+input:focus-visible {
+    outline: 4px solid black;
+}
+
+figure figcaption   {
+    text-align: left;
+}
+
+a:hover {
+    background-color: rgb(187, 187, 231);
+    color: rgb(30, 30, 156);
+}
+
+a:focus-visible {
+    outline: 5px solid azure;
+}
+
+.top    {
+    font-size: clamp(0.5rem, 2vw, 1rem);
+    background-color: silver;
+    padding: var(--space_lg);
+    margin: -0.5rem;
+}
+
+.artikkeli  {
+    color: black;
+    background-color: rgb(211, 207, 207);
+    border-radius: var(--radius);
+    padding: var(--space_sm);
+    margin: var(--space_md);
+    max-width: 40rem;
+    box-shadow: 0.7em 0.7em 10px rgb(133, 112, 115);
+}
+
+.kortti {
+    width: 100%;
+    background-color: rgb(66, 66, 58);
+    border-radius: var(--radius);
+}
+
+.kortti h2  {
+    text-align: center;
+}
+
+#lomake {
+    width: 15rem;
+    height: 20rem;
+    background-color: silver;
+    display: flex;
+    flex-direction: column;
+    padding: var(--space_md);
+    border-radius: var(--radius);
+}
+
+#nappi  {
+    background-color: var(--primary_color);
+    color: rgb(136, 136, 217);
+    border-radius: var(--radius);
+    margin-top: var(--space_lg);
+}
+
+#nappi:focus-visible    {
+    outline: 4px solid var(--primary_color);
+}
+
+#laatikko   {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    background-color: silver;
+    border-radius: var(--radius);
+    gap: var(--space_md);
+    padding: var(--space_md);
+    margin: var(--space_sm);
+    margin-top: var(--space_md);
+    margin-right: var(--space_sm);
+}
+
+#duunari_img    {
+    width: 22rem;
+    height: auto;
+}
+
+#pääotsikko {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#menu ul    {
+    list-style-type: none;
+    font-size: larger;
+    display: flex;
+    gap: 20rem;
+    margin-left: var(--space_lg) ;
+    margin-right: var(--space_lg);
+    justify-content: center;
+}
+
+#menu li    {
+    box-shadow: 0.3rem 0.3rem 0.4rem silver;
+}
+
+#menu   {
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 1300px){
+    #menu ul    {
+        gap: 10rem;
+        align-items: center;
+    }
+    #lomake {
+        position: absolute;
+        bottom: var(--space_lg);
+        left: var(--space_lg);
+    }
+}
+
+@media screen and (max-width:1115px) {
+    #duunari_img    {
+        display: none;
+    }
+    figcaption {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 870px){
+    #menu ul   {
+        flex-direction: column;
+        gap: var(--space_lg);
+        align-items: center;
+    }
+    #laatikko   {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:650px){
+    #laatikko   {
+        grid-template-columns: none;
+        grid-template-rows: 1fr;
+    }
+}
