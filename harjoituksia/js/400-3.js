@@ -99,3 +99,8 @@ for (let i = 1; i <= 30; i++) {
     }
 } console.log(määrä);
 
+let summat = 0;
+for (let i = 1; i <= 20; i++) {
+    summat += i
+}
+console.log(`${summat / 20}`);

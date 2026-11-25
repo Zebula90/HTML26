@@ -142,6 +142,12 @@ a:focus-visible {
     text-decoration: underline;
 }
 
+#sivuteksti {
+    width: 15rem;
+    padding: var(--space_md);
+    border-radius: var(--radius);
+}
+
 #menu ul    {
     list-style-type: none;
     font-size: larger;
@@ -160,6 +166,9 @@ a:focus-visible {
     font-weight: 600;
 }
 
+@media screen and (prefers-reduced-motion: reduce) {
+
+ }
 
 @media screen and (max-width: 1300px){
     #menu ul    {
@@ -178,6 +187,12 @@ a:focus-visible {
         display: none;
     }
     figcaption {
+        display: none;
+    }
+}
+
+@media screen and (max-width:980) {
+    #sivuteksti {
         display: none;
     }
 }
