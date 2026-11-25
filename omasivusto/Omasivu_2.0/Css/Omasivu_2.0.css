@@ -17,7 +17,7 @@
 
 body    {
     background: linear-gradient(rgb(66, 1, 66), black);
-    height: 130vh;
+    height: 150vh;
 }
 
 h1  {
@@ -176,7 +176,8 @@ a:focus-visible {
         align-items: center;
     }
     #lomake {
-        position: absolute;
+        display: flex;
+        flex-direction: column;
         bottom: var(--space_lg);
         left: var(--space_lg);
     }
@@ -186,18 +187,21 @@ a:focus-visible {
     #duunari_img    {
         display: none;
     }
-    figcaption {
+    #duunari_figcaption {
         display: none;
     }
 }
 
-@media screen and (max-width:980) {
-    #sivuteksti {
+@media screen and (max-width:980px) {
+    aside {
         display: none;
     }
 }
 
 @media screen and (max-width: 870px){
+    body {
+        height: 200vh;
+    }
     #menu ul   {
         flex-direction: column;
         gap: var(--space_lg);
